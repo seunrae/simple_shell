@@ -4,7 +4,6 @@
 #include <stdlib.h>
 #include "main.h"
 #include <sys/wait.h>
-#define MAX_SIZE 1024
 void _exec(char *command, char *argv);
 /**
  * _exec - contains the main execve function

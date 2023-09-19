@@ -25,11 +25,12 @@ int main(int ac, char **argv)
 		input = take_input(buffer, interactive_mode);
 		if (input == NULL)
 			break;
-		if (_strcmp(input, "exit") == 0)
-			exit(EXIT_FAILURE);
+
+		_exitcode(input);
+
 		if (_strcmp(input, "env") == 0)
 		{
-			if(_printenv() == -1)
+			if (_printenv() == -1)
 				_puterror("%s: 1: environment variables could not be found", argv[0]);
 		}
 		if (ac < 1)

@@ -12,7 +12,7 @@
 int pathlist(char *argv, char *paths[])
 {
 	int count = 0;
-	char *path = getenv("PATH");
+	char *path = _getenv("PATH");
 
 	if (path != NULL)
 	{

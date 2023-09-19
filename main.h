@@ -1,5 +1,8 @@
 #ifndef MAIN_H
 #define MAIN_H
+#define MAX_SIZE 1024
+#include <unistd.h>
+extern char **environ;
 char *take_input(char *input, int mode);
 int parse_input(char *input, char *args[]);
 int _putchar(char c);
@@ -12,5 +15,9 @@ int pathlist(char *argv, char *paths[]);
 void _exec(char *command, char *argv);
 int _strcmp(const char *str1, const char *str2);
 void _putstring(const char *format, ...);
-int _printenv();
+int _printenv(void);
+int _strncmp(const char *str1, const char *str2, size_t n);
+char *_getenv(const char *name);
+int _atoi(const char *str);
+void _exitcode(char *input);
 #endif
