@@ -11,7 +11,7 @@
  */
 int main(int ac, char **argv)
 {
-	char *buffer = NULL, *input = NULL;
+	char *buffer = NULL, *input = malloc(sizeof(char*));
 	int interactive_mode = isatty(STDIN_FILENO);
 
 	while (1)
