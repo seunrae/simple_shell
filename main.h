@@ -20,4 +20,5 @@ int _strncmp(const char *str1, const char *str2, size_t n);
 char *_getenv(const char *name);
 int _atoi(const char *str);
 void _exitcode(char *input);
+char *_strtok(char *str, const char *delim);
 #endif

@@ -11,14 +11,14 @@
  */
 int parse_input(char *input, char *args[])
 {
-	char *token = strtok(input, " ");
+	char *token = _strtok(input, " ");
 	int count = 0;
 
 	while (token != NULL)
 	{
 		args[count] = token;
 		count++;
-		token = strtok(NULL, " ");
+		token = _strtok(NULL, " ");
 	}
 	args[count] = NULL;
 	return (count);

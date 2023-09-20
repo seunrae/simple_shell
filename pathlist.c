@@ -16,12 +16,12 @@ int pathlist(char *argv, char *paths[])
 
 	if (path != NULL)
 	{
-		char *token = strtok(path, ":");
+		char *token = _strtok(path, ":");
 
 		while (token != NULL)
 		{
 			paths[count] = token;
-			token = strtok(NULL, ":");
+			token = _strtok(NULL, ":");
 			count++;
 		}
 	}
